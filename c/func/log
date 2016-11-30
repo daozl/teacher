@@ -1,0 +1,69 @@
+
+type name = value;
+
+
+
+void (*signal(int ,void (*)(int)))(int);
+-> void (*)(int) signal(int ,void (*)(int));
+
+
+
+
+
+
+xxx(int,int,int *,int,int,int (*p)[3],int *,int *,int *)
+
+yyy(int *,int , int (*)(int),int (*)(int), int,int (*)(int),  int (*(*)[3])(int)   )
+zzz(int (*p)(int (*)(int),int (*)(int)));
+
+int main()
+{
+int arr[5];
+int *p = arr;
+int douarr[2][3];
+int (*q)[3] = douarr;
+int *darr = *douarr;
+int fun1(int);
+int fun2(int);
+int fun3(int);
+int fun4(int (*)(int),int (*)(int));
+int (*funp)(int) = fun1;
+int (*funarr[3])(int) = {fun1,fun2,fun3};
+
+xxx(arr[3], *arr, arr+2, p[1],douarr[1][0],douarr+1,douarr[1],*q,q[2])
+
+yyy(darr+1,darr[0],fun1,funp,fun4(fun2,fun3),funarr[2],funarr);
+
+zzz(fun4);
+
+}
+
+
+
+
+yyy(int* (*)(int *),int* (*)(int *), int* (*)(int *(*)(int*),int* (*)(int*))  ,int *,
+		int* (*)(int *), int* (*[3])(int*))
+
+int main()
+{
+int* fun1(int *);
+int* fun2(int *);
+int* fun3(int *);
+int* fun4(int *(*)(int*),int* (*)(int*));
+int* (*funp)(int*) = fun1;
+int* (*funarr[3])(int*) = {fun1,fun2,fun3};
+
+yyy(fun1,funp,fun4,fun4(fun2,fun3),funarr[2],funarr);
+
+}
+
+
+
+
+
+
+
+
+
+
+

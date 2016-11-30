@@ -1,0 +1,15 @@
+
+
+openfile();
+
+
+readfile();
+
+
+writefile();
+
+
+closefile();
+
+
+

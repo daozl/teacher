@@ -1,0 +1,24 @@
+1 2016-8-10 17:00:10
+2 2016-8-10 17:00:11
+3 2016-8-10 17:00:12
+4 2016-8-10 17:00:13
+5 2016-8-10 17:10:20
+6 2016-8-10 17:10:21
+7 2016-8-10 17:10:22
+
+
+1 计算100天后的日期
+2 timelog 
+
+time_t stamp;
+
+time(&stamp);
+stamp = time(NULL);
+
+struct tm *tm;
+tm = localtime(&stamp);
+
+char buf[1024];
+strftime(buf,1024,"It's:%Y-%m-%d",tm);
+puts(buf);
+

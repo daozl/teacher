@@ -1,0 +1,33 @@
+int i;
+int *p = &i;
+int **q = &p;
+int arr[5];
+int *a = arr;
+int douarr[2][3];
+int (*da)[3] = douarr;
+int *darr = *douarr;
+
+i      &i       p       *p->i       &q       *q       arr+3       arr[3]
+*a++
+a++ -> a = a+1   arr++;(F)
+douarr[1] -> *(douarr+1)
+douarr[1][0]
+*douarr	-> *(douarr+0)
+douarr+1
+da+2
+*da
+darr++ -> darr = darr+1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

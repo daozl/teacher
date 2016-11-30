@@ -1,0 +1,46 @@
+10
+
+dir
+832
+svn://172.16.120.245/coder87/apue/io/adv
+svn://172.16.120.245
+
+
+
+2016-08-29T03:17:59.162323Z
+818
+testsvn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+004934dc-c04c-41c9-adba-9acac0dcbb5c
+
+select
+dir
+
+nonblock
+dir
+
+poll
+dir
+
+mmap
+dir
+
+epoll
+dir
+
+lockf
+dir
+

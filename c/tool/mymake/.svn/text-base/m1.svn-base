@@ -1,0 +1,15 @@
+
+
+mytool:main.o tool1.o tool2.o
+	gcc main.o tool1.o tool2.o -o mytool
+
+main.o:main.c
+	gcc -Wall -g -c main.c -o main.o
+tool1.o:tool1.c
+	gcc -Wall -g -c tool1.c -o tool1.o
+tool2.o:tool2.c
+	gcc -Wall -g -c tool2.c -o tool2.o 
+
+
+
+

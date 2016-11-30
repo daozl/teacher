@@ -1,0 +1,87 @@
+TYPE NAME = VALUE 
+
+TYPE -> int char float ,   struct node_st, union   enum   int(int)
+
+
+typedef 已有的类型  新名字；
+
+typedef int INT;
+INT i;  ->  int i;
+INT *p,q;  -> int *p,q;
+
+typedef int *INTP;   -> int*  INTP;
+INTP p,q  -> int *p,*q;
+
+
+typedef int ARR[6]; -> int[6]  ARR;
+int a[6]  ->   int[6]   a;
+ARR a; -> int a[6];
+
+
+int *func(int,int);  ->  int*(int,int)   func;
+
+typedef int* FUNC(int,int); -> int*(int,int) FUNC;
+FUNC func1,func2; -> int* func1(int,int); int* func2(int,int);
+
+
+int* (*funcp)(int,int) ;      ->   int*(int,int)   *funcp;
+typedef int* (*FUNCP)(int,int) ;
+FUNCP p;->   int* (*p)(int,int) ;
+
+
+typedef int* (*FUNCP[5])(int,int) ; -> int *(*)(int,int)  [5]   FUNCP;
+FUNCP p;->  int* (*p[5])(int,int) ; 
+
+
+
+
+struct student_st
+{	.....};
+
+typedef struct student_st *STUP;
+STUP   p,q;  -> struct student_st *p,*q;
+
+typedef struct student_st A[3]; -> struct student_st[3]  A;
+A a;-> struct student_st  a[3];
+
+
+
+
+
+/*
+typedef int *INTP;
+INTP p,q; -> int *p,*q;
+
+#define INTP int*;
+INTP p,q; -> int *p,q;
+*/
+
+
+
+
+
+
+
+
+
+
+void (*signal(int,void (*)(int)))(int);
+
+-> void (*)(int)  signal(int,void (*)(int))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
